@@ -169,7 +169,7 @@
     justify-content: center;
     background:
       linear-gradient(180deg, rgba(7, 10, 18, 0.58) 0%, rgba(10, 13, 22, 0.46) 28%, rgba(12, 16, 26, 0.72) 100%),
-      46% center / cover no-repeat;
+      43% center / cover no-repeat;
   }
   .hero::before {
     content: "";
@@ -582,16 +582,58 @@
   @media (max-width: 720px) {
     .wrap { padding: 0 22px; }
     section { padding: 76px 0; }
-    .hero { padding: 88px 0 76px; min-height: auto; }
-    .portrait { width: 132px; height: 132px; margin-bottom: 38px; }
+    .hero {
+      padding: 68px 0 54px;
+      min-height: auto;
+      background-position: 40% center;
+    }
+    .hero .wrap { padding: 0 26px; }
+    .portrait {
+      width: 112px;
+      height: 112px;
+      margin-bottom: 26px;
+    }
+    .name {
+      font-size: clamp(48px, 14vw, 66px);
+      margin-bottom: 20px;
+    }
+    html[lang="zh"] .name {
+      font-size: clamp(42px, 12vw, 56px);
+    }
+    .tagline {
+      font-size: 11.5px;
+      line-height: 2;
+      margin-bottom: 28px;
+    }
     .cards { grid-template-columns: 1fr; }
     .cvgrid { grid-template-columns: 1fr; gap: 44px; }
     .card { padding: 34px 26px 36px; }
     .pub, .talk { grid-template-columns: 1fr; gap: 12px; }
     .pubside { flex-direction: row; align-items: baseline; gap: 18px; }
-    .hero-cards { grid-template-columns: 1fr; gap: 10px; }
-    .hero-card { min-height: 64px; }
-    .btnrow { flex-direction: column; }
+    .hero-cards {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 9px;
+      margin-bottom: 20px;
+    }
+    .hero-card {
+      min-height: 54px;
+      font-size: 17px;
+    }
+    .hero .btnrow {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 9px;
+    }
+    .hero .btnrow .btn {
+      justify-content: center;
+      padding: 12px 10px;
+      font-size: 10.5px;
+      letter-spacing: 0.08em;
+      min-width: 0;
+    }
+    .hero .btnrow .btn:first-child {
+      grid-column: 1 / -1;
+    }
     .btn { justify-content: center; }
     .navlinks { gap: 20px; }
     .navlinks a { font-size: 11.5px; letter-spacing: 0.1em; }
