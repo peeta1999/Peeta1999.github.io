@@ -584,8 +584,13 @@
     section { padding: 76px 0; }
     .hero {
       padding: 68px 0 54px;
-      min-height: auto;
-      background-position: 40% center;
+      min-height: calc(100svh - 88px);
+      background-position: 28% center;
+      background-size: auto 112%;
+    }
+    .hero::before {
+      background-position: 28% center;
+      background-size: auto 112%;
     }
     .hero .wrap { padding: 0 26px; }
     .portrait {
