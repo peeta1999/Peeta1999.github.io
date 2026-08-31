@@ -690,23 +690,21 @@
       grid-area: nav;
       width: 100%;
       margin: 0;
-      gap: 24px;
-      overflow-x: auto;
-      overflow-y: hidden;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      overflow: visible;
       padding: 2px 0 4px;
     }
-    .navlinks::-webkit-scrollbar { display: none; }
     .navlinks a {
-      font-size: 11px;
-      letter-spacing: 0.09em;
-      padding: 6px 0;
+      font-size: 9.5px;
+      letter-spacing: 0.07em;
+      padding: 4px 0;
       flex: 0 0 auto;
     }
     html[lang="zh"] .navlinks {
       justify-content: center;
-      gap: 18px;
+      gap: 8px 14px;
     }
     .yearrow .y { font-size: 34px; }
   }
