@@ -651,6 +651,8 @@
       gap: 8px 14px;
       padding-top: 10px;
       padding-bottom: 10px;
+      padding-left: 12px;
+      padding-right: 12px;
     }
     .brand {
       grid-area: brand;
@@ -705,12 +707,12 @@
     html[lang="en"] .navlinks {
       flex-wrap: nowrap;
       justify-content: center;
-      gap: 7px;
+      gap: clamp(4px, 1.35vw, 6px);
       overflow: hidden;
     }
     html[lang="en"] .navlinks a {
-      font-size: 8.2px;
-      letter-spacing: 0.035em;
+      font-size: clamp(8.8px, 2.35vw, 9.4px);
+      letter-spacing: 0.015em;
       padding: 4px 0;
     }
     html[lang="zh"] .navlinks {
