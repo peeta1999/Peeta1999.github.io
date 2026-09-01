@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Tonghua Li,PhD in Politics, University of York, 李烔桦</title>
+<title>Tonghua Li | PhD Researcher in Politics, University of York • 李烔桦</title>
 <meta name="description" content="Tonghua Li is a PhD researcher in Politics at the University of York, working on political discourse, trade politics and US-China relations." />
 <meta name="author" content="Tonghua Li" />
 <meta name="theme-color" content="#0A0A0B" />
@@ -750,6 +750,20 @@
       letter-spacing: 0.07em;
       padding: 4px 0;
       flex: 0 0 auto;
+    }
+    /* English mobile navigation: keep all section labels on a single row.
+       Chinese mobile navigation remains unchanged. */
+    html[lang="en"] .navlinks {
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 0 clamp(5px, 1.7vw, 9px);
+      overflow: visible;
+      white-space: nowrap;
+    }
+    html[lang="en"] .navlinks a {
+      font-size: clamp(7px, 2.05vw, 8.6px);
+      letter-spacing: 0.015em;
+      white-space: nowrap;
     }
     html[lang="zh"] .navlinks {
       justify-content: center;
